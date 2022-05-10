@@ -1,0 +1,440 @@
+/* Fonts  Roboto  900, 700, 500, 400 , Raleway 700 
+
+colors main teme #212121
+colors white teme #FFFFFF
+colors accent #2196F3
+color text #757575
+footel color rgba(255, 255, 255, 0.6);
+
+hero-section >  letter-spacing: 0.06em;
+header (sans logo) > letter-spacing: 0.02em;
+body > letter-spacing: 0.03em;
+ */
+
+/* Second background theme #2F303A;
+ main #ffffff
+ section Employees theme #F5F4FA; */
+
+:root {
+  /* Text colors */
+  --main-text-color: #757575;
+  --bold-text-color: #212121;
+  --white-text-color: #ffffff;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+
+  /* Bgc colors */
+  --main-bgc-color: #ffffff;
+  --secondary-bgc-color: #f5f4fa;
+  --dark-bgc-color: #2f303a;
+  --btn-bgc-hover: #188ce8;
+
+  --accent-color: #2196f3;
+
+  /* Fonts */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--main-bgc-color);
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+  /* font-style: normal;
+  font-weight: 400; */
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px dashed red;
+}
+
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.link {
+  text-decoration: none;
+  display: block;
+  color: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header */
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
+
+  text-decoration: none;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+.logo-black {
+  color: var(--bold-text-color);
+}
+.logo-white {
+  color: var(--white-text-color);
+}
+
+.nav,
+.header-nav,
+.header-contacts,
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav .link,
+.header-contacts .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-family: var(--main-font);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--bold-text-color);
+}
+.header-nav .item,
+.header-contacts .item {
+  margin-right: 50px;
+}
+.header-nav .item:last-child,
+.header-contacts .item:last-child {
+  margin-right: 0;
+}
+.header-contacts {
+  margin-left: auto;
+}
+
+.header-contacts .link {
+  color: var(--main-text-color);
+}
+.header-nav .link:focus,
+.header-nav .link:hover,
+.header-contacts .link:hover,
+.header-contacts .link:focus {
+  color: var(--accent-color);
+}
+.link.current {
+  color: var(--accent-color);
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Hero section */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+  background-color: var(--dark-bgc-color);
+  color: var(--white-text-color);
+
+  letter-spacing: 0.06em;
+}
+.hero-title {
+  width: 670px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+}
+.hero-button {
+  padding: 10px 32px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: currentColor;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  /* text-align: center; */
+
+  cursor: pointer;
+}
+.hero-button:hover {
+  background-color: var(--btn-bgc-hover);
+}
+/* Benefits */
+.benefits-list {
+  display: flex;
+  align-items: center;
+}
+.benefits-list .item {
+  margin-right: 30px;
+}
+.benefits-list .item:last-child {
+  margin: 0;
+}
+
+.benefits-title-list {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--bold-text-color);
+}
+.benefits-title-text {
+  line-height: 1.71;
+}
+/* About us */
+.about {
+  padding-top: 0;
+}
+.about-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--bold-text-color);
+}
+.about-list {
+  display: flex;
+  align-items: center;
+}
+.about-list .item {
+  margin-right: 30px;
+
+  background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
+  mix-blend-mode: normal;
+}
+.about-list .item:last-child {
+  margin-right: 0;
+}
+/* Our team */
+.team {
+  background-color: var(--secondary-bgc-color);
+}
+.team-list {
+  display: flex;
+  align-items: center;
+}
+.team-list .item {
+  margin-right: 30px;
+  padding-bottom: 30px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--main-bgc-color);
+}
+.team-list .item:last-child {
+  margin-right: 0;
+}
+.team-title {
+  padding-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--bold-text-color);
+}
+.team-img {
+  margin-bottom: 30px;
+}
+.team-name {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--bold-text-color);
+}
+.team-ability {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+/* Footer */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--dark-bgc-color);
+}
+.footer .logo {
+  display: block;
+
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding: 0;
+}
+.footer-list .item {
+  margin-bottom: 9px;
+}
+.footer-list .item:last-child {
+  margin-bottom: 0;
+}
+.footer-adress .link {
+  line-height: 1.71;
+  color: var(--white-text-color);
+  font-style: normal;
+}
+.footer-contacts .link {
+  line-height: 1.71;
+  color: var(--footer-text-color);
+  font-style: normal;
+}
+.footer-nav .link:focus,
+.footer-nav .link:hover,
+.footer-contacts .link:hover,
+.footer-contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/* Portfolio page */
+/* Site navigation */
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.site-nav .item {
+  margin-right: 8px;
+}
+.site-nav .item:last-child {
+  margin-right: 0;
+}
+
+.site-product > .portfolio-btn {
+  padding: 6px 22px;
+
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--bold-text-color);
+  background: var(--secondary-bgc-color);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.site-product > .active-btn {
+  background: var(--accent-color);
+  color: var(--white-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+.active-btn:hover,
+.active-btn:focus {
+  background-color: var(--btn-bgc-hover);
+  /* color: var(--bold-text-color); */
+}
+/* Work examples */
+.list.work-examples {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.work-examples .item {
+  margin: 15px;
+  /* width: 370px; */
+  flex-basis: calc((100% / 3) - 30px);
+}
+
+.work-examples .link {
+  /* width: calc(100%-60px) / 3; */
+  /* width: 380px; */
+  /* height: 404px;
+  left: 215px;
+  top: 262px; */
+
+  background: #ffffff;
+}
+/* .img-container {
+  min-width: 100%;
+} */
+.work-examples-container {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+
+.work-examples-title {
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--bold-text-color);
+}
+.work-examples-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
