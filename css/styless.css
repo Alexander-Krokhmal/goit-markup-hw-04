@@ -215,6 +215,7 @@ img {
 }
 .benefits-list .item {
   margin-right: 30px;
+  width: 270px;
 }
 .benefits-list .item:last-child {
   margin: 0;
@@ -280,7 +281,7 @@ img {
   margin-right: 0;
 }
 .team-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   font-weight: 700;
   font-size: 36px;
@@ -349,7 +350,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 50px;
+
+  margin-bottom: 50px;
 }
 .site-nav .item {
   margin-right: 8px;
