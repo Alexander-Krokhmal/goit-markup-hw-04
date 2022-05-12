@@ -139,6 +139,11 @@ img {
 .header-contacts .item {
   margin-right: 50px;
 }
+
+.header-contacts .link {
+  display: inline-flex;
+  align-items: center;
+}
 .header-nav .item:last-child,
 .header-contacts .item:last-child {
   margin-right: 0;
@@ -165,8 +170,23 @@ img {
   padding-bottom: 94px;
 }
 
+.header-icons {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.header-icons:hover {
+  fill: var(--accent-color);
+}
+
+.link.header-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Hero section */
 .hero {
+  width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
@@ -175,6 +195,8 @@ img {
   text-align: center;
   background-color: var(--dark-bgc-color);
   color: var(--white-text-color);
+  background-image: url(../images/Img-hero.jpg),
+    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 
   letter-spacing: 0.06em;
 }
@@ -280,7 +302,8 @@ img {
 .team-list .item:last-child {
   margin-right: 0;
 }
-.team-title {
+.team-title,
+.clients-title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -302,10 +325,84 @@ img {
   color: var(--bold-text-color);
 }
 .team-ability {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
+
+.team-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-socials:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-socials .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.team-socials .link:hover,
+.team-socials .link:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.team-icons {
+  fill: #afb1b8;
+}
+.link:hover .team-icons {
+  fill: var(--white-text-color);
+}
+
+/* Our clients */
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.clients-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-item .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 106px;
+}
+
+.clients-icon {
+  fill: #afb1b8;
+}
+
+.clients-item .link:hover,
+.clients-item .link:focus {
+  border-color: var(--accent-color);
+}
+
+.link:hover .clients-icon {
+  fill: var(--accent-color);
+}
+
 /* Footer */
 .footer {
   padding-top: 60px;
