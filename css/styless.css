@@ -371,27 +371,26 @@ img {
   gap: 30px;
 }
 .clients-item {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 92px;
-
-  padding: 16px 32px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
+  align-items: center; */
 }
 
 .clients-item .link {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
-  width: 106px;
+  width: 170px;
+  height: 92px;
+
+  /* padding: 16px 32px; */
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 .clients-icon {
   fill: #afb1b8;
+  font-size: 0px;
 }
 
 .clients-item .link:hover,
