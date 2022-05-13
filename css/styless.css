@@ -242,6 +242,19 @@ img {
 .benefits-list .item:last-child {
   margin: 0;
 }
+.benefits-box {
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--secondary-bgc-color);
+  border-radius: 4px;
+}
 
 .benefits-title-list {
   margin-bottom: 10px;
@@ -383,7 +396,7 @@ img {
   width: 170px;
   height: 92px;
 
-  /* padding: 16px 32px; */
+  padding: 16px 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -398,7 +411,8 @@ img {
   border-color: var(--accent-color);
 }
 
-.link:hover .clients-icon {
+.link:hover .clients-icon,
+.link:focus .clients-icon {
   fill: var(--accent-color);
 }
 
@@ -408,6 +422,14 @@ img {
   padding-bottom: 60px;
 
   background-color: var(--dark-bgc-color);
+}
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.footer-contacts {
+  margin-right: 70px;
 }
 .footer .logo {
   display: block;
@@ -437,6 +459,46 @@ img {
 .footer-contacts .link:hover,
 .footer-contacts .link:focus {
   color: var(--accent-color);
+}
+.footer-network-title {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+
+.network-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.network-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.network-list .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.network-list .link:hover,
+.network-list .link:focus {
+  background-color: var(--accent-color);
+}
+
+.network-icons {
+  fill: var(--white-text-color);
+}
+.link:hover .network-icons {
+  fill: var(--white-text-color);
 }
 
 /* Portfolio page */
@@ -535,4 +597,10 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+
+.work-examples .link:hover,
+.work-examples .link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
