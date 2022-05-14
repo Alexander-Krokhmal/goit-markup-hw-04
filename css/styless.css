@@ -195,8 +195,8 @@ img {
   text-align: center;
   background-color: var(--dark-bgc-color);
   color: var(--white-text-color);
-  background-image: url(../images/Img-hero.jpg),
-    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Img-hero.jpg);
 
   letter-spacing: 0.06em;
 }
@@ -246,7 +246,6 @@ img {
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
-  padding: 25px 100px;
 
   display: flex;
   justify-content: center;
@@ -372,7 +371,8 @@ img {
 .team-icons {
   fill: #afb1b8;
 }
-.link:hover .team-icons {
+.link:hover .team-icons,
+.link:focus .team-icons {
   fill: var(--white-text-color);
 }
 
@@ -396,7 +396,6 @@ img {
   width: 170px;
   height: 92px;
 
-  padding: 16px 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
